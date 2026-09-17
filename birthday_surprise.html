@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Love ❤️</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:linear-gradient(135deg,#170b2d,#3b123f,#160b28);color:#fff;min-height:100vh;overflow-x:hidden}
+.wrap{max-width:720px;margin:auto;padding:28px 18px 60px;text-align:center}
+.card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:28px;padding:28px 20px;box-shadow:0 15px 50px #0005;backdrop-filter:blur(8px)}
+h1{font-size:clamp(34px,8vw,65px);margin:10px 0;color:#ffd6e7;text-shadow:0 0 22px #ff76b5}
+h2{color:#ffd0e3;font-size:28px}.small{font-family:Arial,sans-serif;color:#f6dce9;line-height:1.7}
+button{border:0;border-radius:999px;padding:15px 25px;background:#ff76ad;color:white;font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 7px 20px #ff4d9b55;margin:8px}
+button:hover{transform:scale(1.04)}button:disabled{opacity:.6}
+.hidden{display:none}.cake{position:relative;width:220px;height:190px;margin:20px auto 8px}
+.plate{position:absolute;bottom:10px;left:10px;width:200px;height:20px;background:#f8b9d1;border-radius:50%}
+.layer{position:absolute;left:30px;width:160px;height:65px;background:linear-gradient(#ffb6d2,#e66b9e);border-radius:18px 18px 12px 12px;bottom:28px;box-shadow:inset 0 -9px #c94c83}
+.icing{position:absolute;left:28px;bottom:78px;width:164px;height:30px;background:#fff0f7;border-radius:50%}
+.candle{position:absolute;left:103px;bottom:105px;width:14px;height:48px;background:repeating-linear-gradient(45deg,#fff,#fff 7px,#ff75aa 7px,#ff75aa 14px);border-radius:4px}
+.flame{position:absolute;left:101px;bottom:151px;width:19px;height:28px;background:#ffd45b;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 25px #ffc34d;animation:flicker .6s infinite alternate}
+@keyframes flicker{to{transform:rotate(-40deg) scale(1.1)}} .off{display:none}
+.story{text-align:left;line-height:1.9;font-family:Arial,sans-serif;color:#ffeaf3;font-size:16px}
+.quote{font-size:23px;color:#ffd0e3;line-height:1.5;margin:25px 0}
+.heart{position:fixed;bottom:-30px;font-size:22px;animation:float 7s linear infinite;opacity:.7}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.footer{margin-top:25px;color:#f3b8d0;font-family:Arial,sans-serif;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="small">A little surprise made only for you ✨</div>
+    <h1>Happy Birthday<br>My Nehaa ❤️</h1>
+    <p class="small">Before you read anything… close your eyes for 3 seconds and smile.</p>
+    <div class="cake" aria-label="Birthday cake with candle">
+      <div class="flame" id="flame"></div><div class="candle"></div>
+      <div class="icing"></div><div class="layer"></div><div class="plate"></div>
+    </div>
+    <p class="small" id="instruction">Make a wish, baby… then blow the candle 🕯️</p>
+    <button id="blow">Blow the candle ✨</button>
+    <button id="open" class="hidden">Open your birthday letter 💌</button>
+  </div>
+
+  <div class="card hidden" id="letter" style="margin-top:22px">
+    <h2>To the girl who became my home ❤️</h2>
+    <div class="story">
+      <p>Happy Birthday, my Nehaa. 🥹❤️</p>
+      <p>Yaad hai hamari pehli mulakat? Tum apne terrace pe mummy ke saath khadi thi, aur main neeche apne bhai aur mummy ke saath. Tab shayad humein bhi nahi pata tha ki ek chhoti si mulakat humari itni beautiful story ban jayegi.</p>
+      <p>Phir dheere-dheere baatein shuru hui… mulakatein hui, thode z​​agde hue, phir achhi bonding bani, aur dekhte hi dekhte hum relationship mein aa gaye. Pyaar badhta gaya, aur ab humara ek saal bhi ho gaya. ❤️</p>
+      <p>Mujhe tumhari bachho wali harkatein bhi pasand hain, tumhara mujhe samjhana bhi, kabhi-kabhi tumhara jhooth bolna aur phir mera rooth jaana bhi. Aur jab tum khud rooth jaati ho na, tab bhi tum utni hi cute lagti ho.</p>
+      <p>Tumhari caring, loving nature, mujhe galat cheezon se door rakhna, career ko lekar serious banana, aur financial condition ko samajhkar mature hona — ye sab cheezein mujhe tum par aur zyada pyaar karne par majboor karti hain.</p>
+      <p>Thank you meri life mein aane ke liye. Thank you mujhe samajhne ke liye, mere saath rehne ke liye, aur mujhe better insaan banane ke liye.</p>
+      <p class="quote">“Tum sirf meri girlfriend nahi ho… tum meri favourite person, meri peace, meri smile aur meri sabse pyaari aadat ho.”</p>
+      <p>Main chahta hoon tum hamesha khush raho, apne dreams achieve karo, aur kabhi apni smile mat khona. Zindagi mein kitne bhi ups and downs aayein, main tumhara haath pakadkar tumhare saath chalna chahta hoon.</p>
+      <p>Happy Birthday, meri Nehaa, meri Billu Badmosh, meri Pillu, meri jaan. ❤️<br>One year down, and I wish for a lifetime with you.</p>
+      <p style="text-align:center;font-size:22px;color:#ffd0e3">I love you endlessly. ♾️❤️</p>
+    </div>
+    <button onclick="document.getElementById('final').classList.remove('hidden')">One last surprise 🌙</button>
+  </div>
+  <div class="card hidden" id="final" style="margin-top:22px">
+    <h2>Your wish is now in the stars ✨</h2>
+    <p class="quote">May every little dream of yours come true… and may I always be there to celebrate every beautiful moment with you.</p>
+    <div style="font-size:50px">🌙 ⭐ 💗 ⭐ 🌙</div>
+    <p class="small">Forever your person,<br><b>— Your love ❤️</b></p>
+  </div>
+  <div class="footer">Made with love, memories and a little madness ❤️</div>
+</div>
+<script>
+const flame=document.getElementById('flame'), blow=document.getElementById('blow'), open=document.getElementById('open');
+blow.addEventListener('click',()=>{flame.classList.add('off');blow.disabled=true;document.getElementById('instruction').textContent='Wish made? Then open your letter, birthday girl 💗';open.classList.remove('hidden');});
+open.addEventListener('click',()=>{document.getElementById('letter').classList.remove('hidden');open.classList.add('hidden');window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});});
+for(let i=0;i<14;i++){let h=document.createElement('div');h.className='heart';h.textContent=['❤️','💗','✨','💕'][i%4];h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*7)+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
